@@ -1,1 +1,500 @@
-Hello World
+<!DOCTYPE html><html color-mode="light" lang="en"><head>
+    <meta charset="utf-8">
+    <title>Hritik Tayade</title>
+    <script>
+      if (
+        localStorage.getItem("color-mode") === "dark" ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          !localStorage.getItem("color-mode"))
+      ) {
+        document.documentElement.setAttribute("color-mode", "dark");
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script></head>
+  
+  <body>
+    <div id="container">
+      <!-- Dark Mode Toggle  -->
+      <div class="color-mode-toggle">
+        <button class="color-mode-btn light--hidden" aria-label="Toggle light mode">
+          <svg class="icon-sun">
+            <use xlink:href="assets/svg/svg-defs.svg#sun"></use>
+          </svg>
+        </button>
+        <button class="color-mode-btn dark--hidden" aria-label="Toggle dark mode">
+          <svg class="icon-moon">
+            <use xlink:href="assets/svg/svg-defs.svg#moon"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- 
+        Name Block
+        -->
+      <div id="name-block">Hritik Tayade</div>
+      <!-- 
+        Navigation Block
+        -->
+      <div id="nav-block">
+        <!-- Additional nav links go here -->
+        <span id="projects" class="nav-selected">
+          Projects.
+        </span>
+      
+          <span id="Resumé">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              Resumé
+            </a>
+          </span>
+        </div>
+      <!-- 
+        Profile Block
+        -->
+      <div id="pf-img-container">
+        <img id="pf-img-source" src="https://avatars0.githubusercontent.com/u/34279258?s=500&amp;u=3ad3ed9d5c56360a8bbfef92d0d7509dbe18a8fc&amp;v=4">
+        <img id="pf-img-shadow" src="https://avatars0.githubusercontent.com/u/34279258?s=500&amp;u=3ad3ed9d5c56360a8bbfef92d0d7509dbe18a8fc&amp;v=4">
+      </div>
+      <div id="pf-info-container">
+        <div id="pf-info-status">
+          <!-- Github status goes here  -->
+        </div>
+        <div id="pf-info-links">
+        <div id="pf-info-github">
+          <svg class="pf-info-icon icon-f">
+            <use xlink:href="assets/svg/svg-defs.svg#github"></use>
+          </svg>
+          <a target="_blank" href="https://github.com/tayadehritik">
+            <span>tayadehritik</span>
+          </a>
+        </div>
+      
+          <div id="pf-info-linkedin">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#linkedin"></use>
+            </svg>
+            <a target="_blank" href="https://www.linkedin.com/in/tayadehritik/">
+              <span>Hritik Tayade</span>
+            </a>
+          </div>
+        
+          <div>
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#link"></use>
+            </svg>
+            <a href="https://www.behance.net/">
+              <span>Behance</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 
+        Repository Block
+        -->
+      <div id="repo-block">
+        <div id="repo-grid" class="grid" data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;gutter&quot;: 20, &quot;horizontalOrder&quot;: true, &quot;columnWidth&quot;: 350, &quot;fitWidth&quot;: true }">
+          <!-- repository cards go here -->
+        
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/FF-converter">
+                <span class="repo-title">
+                  
+                  FF-converter
+                </span>
+                <span class="repo-desc">Responsive Web App for file format conversion</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>2</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/aperturebase">
+                <span class="repo-title">
+                  
+                  aperturebase
+                </span>
+                <span class="repo-desc">Responsive photography blog made with django </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Lua</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/love2d-MobileGame">
+                <span class="repo-title">
+                  
+                  love2d-MobileGame
+                </span>
+                <span class="repo-desc">Platformer made with love2d written in Lua</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>CSS</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/DonutDash-Website">
+                <span class="repo-title">
+                  
+                  DonutDash-Website
+                </span>
+                <span class="repo-desc"></span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Java</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/NightShift">
+                <span class="repo-title">
+                  
+                  NightShift
+                </span>
+                <span class="repo-desc">Collection of solutions for codechef problems, implementation of various DS and Algorithms in java and c++</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/ChromeExtension">
+                <span class="repo-title">
+                  
+                  ChromeExtension
+                </span>
+                <span class="repo-desc">Keylogger as a chrome extension written in javascript</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Ruby</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/dev.to">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  dev.to
+                </span>
+                <span class="repo-desc">Where programmers share ideas and help each other grow</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/github-contribution-leaderboard">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  github-contribution-leaderboard
+                </span>
+                <span class="repo-desc">Helps build a Hacktoberfest leaderboard on command line</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/python-ds">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  python-ds
+                </span>
+                <span class="repo-desc">Repository for data structure and algorithms in Python</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>Jupyter Notebook</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/cosmos">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  cosmos
+                </span>
+                <span class="repo-desc">Algorithms that run our universe | Your personal library of every algorithm and data structure code that you will ever encounter | Ask us anything at our forum | Participate at Hacktoberfest</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>C</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/DS_with_hacktoberfest">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  DS_with_hacktoberfest
+                </span>
+                <span class="repo-desc"></span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>C</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/Holo-N">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  Holo-N
+                </span>
+                <span class="repo-desc">Holo Kernel for ZF2</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/tayadehritik/Launchpad">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  Launchpad
+                </span>
+                <span class="repo-desc">An online version of a launchpad:</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          </div>
+      </div>
+    </div>
+    <!-- 
+      Scripts
+      -->
+    <script src="index.js"></script>
+  
+
+</body></html>
